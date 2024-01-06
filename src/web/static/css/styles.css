@@ -1,0 +1,23 @@
+.graph{
+	padding: 10px;
+	text-align: center;
+}
+
+.crypto-ticker-container {
+    position: relative;
+    max-width: 100%;
+    height: 35px;
+    overflow-x: hidden;
+  }
+  
+.marquee {
+position: absolute;
+white-space: nowrap;
+will-change: transform;
+animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+from { transform: translateX(0); }
+to { transform: translateX(-50%); }
+}
