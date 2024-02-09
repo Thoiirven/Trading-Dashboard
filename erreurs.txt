@@ -2,3 +2,4 @@ Erreur détectée : Timed out
 Erreur détectée : could not convert string to float: 'NONE'
 Erreur détectée : could not convert string to float: 'NONE'
 Erreur détectée : could not convert string to float: 'NONE'
+Erreur détectée : could not convert string to float: 'NONE'
