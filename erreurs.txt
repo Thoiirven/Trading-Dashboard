@@ -5,3 +5,4 @@ Erreur détectée : could not convert string to float: 'NONE'
 Erreur détectée : could not convert string to float: 'NONE'
 Erreur détectée : 'int' object has no attribute 'id_user'
 Erreur détectée : 'int' object has no attribute 'id_user'
+Erreur détectée : Timed out
