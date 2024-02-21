@@ -13,3 +13,4 @@ Erreur détectée : Timed out
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
