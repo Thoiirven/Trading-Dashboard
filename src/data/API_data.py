@@ -27,9 +27,7 @@ def fill_first_time_wallet(crypto_array, user_ID, value_begin_usdt):
             ]
         )
         df.to_csv(file_path + "/wallet" + str(user_ID) + ".csv", sep=";", index=False)
-
         df = pd.read_csv(file_path + "/wallet" + str(user_ID) + ".csv", sep=";")
-
         new_data = {
             "Crypto": "USDT",
             "Symbol": "USDT",
@@ -38,14 +36,14 @@ def fill_first_time_wallet(crypto_array, user_ID, value_begin_usdt):
             "Quantity_USDT": value_begin_usdt,
         }
         df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
-
+        print(df)
         for crypto in crypto_array:
             new_data = {
                 "Crypto": DICT_NAME[crypto],
                 "Symbol": crypto,
                 "Quantity": 0,
                 "Price_Buy": 0,
-                "Quantity_USDT": value_begin_usdt / NB_CRYPTO,
+                "Quantity_USDT": int(value_begin_usdt) / NB_CRYPTO,
             }
             df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
 
