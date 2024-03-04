@@ -127,7 +127,34 @@ def get_quantity_usdt_symbol_wallet(symbol, user_ID):
 
     return quantity
 
+def init_transaction(client_id):
+    current_directory = os.path.dirname(__file__)
+    file_path = os.path.join(current_directory, "..", "data", "transactions")
+    if not os.path.exists(file_path + "/transactions" + str(client_id) + ".csv"):
+        df = pd.DataFrame(
+            columns=[
+                "Symbol",
+                "OrderId",
+                "ClientId",
+                "ClientOrderId",
+                "Status",
+                "Type",
+                "Side",
+                "Price",
+                "Gain",
+                "Quantity",
+                "Commission",
+                "tradeId",
+                "transactDate",
+                "transactTime",
+                "Timestamp",
+            ]
+        )
 
+        df.to_csv(
+            file_path + "/transactions" + str(client_id) + ".csv", sep=";", index=False
+        )
+        
 def save_transaction(transaction, client_id):
     current_directory = os.path.dirname(__file__)
     file_path = os.path.join(current_directory, "..", "data", "transactions")
