@@ -81,6 +81,15 @@ def update_quantity_wallet(symbol, user_ID, quantity):
 
     df.to_csv(file_path, sep=";", index=False)
 
+def set_quantity_wallet(symbol, user_ID, quantity):
+    current_directory = os.path.dirname(__file__)
+    file_path = os.path.join(
+        current_directory, "..", "data", "./wallets/wallet" + str(user_ID) + ".csv"
+    )
+    df = pd.read_csv(file_path, sep=";")
+    df.loc[df["Symbol"] == symbol, "Quantity"] = quantity
+
+    df.to_csv(file_path, sep=";", index=False)
 
 def update_price_wallet(symbol, user_ID, price):
     current_directory = os.path.dirname(__file__)
@@ -92,6 +101,8 @@ def update_price_wallet(symbol, user_ID, price):
     df.loc[df["Symbol"] == symbol, "Price_Buy"] = price
 
     df.to_csv(file_path, sep=";", index=False)
+
+
 
 
 def add_quantity_usdt_wallet(symbol, user_ID, quantity):
@@ -161,30 +172,7 @@ def save_transaction(transaction, client_id):
     quantity = str(sum([float(fill["qty"]) for fill in transaction["fills"]]))
     print(quantity)
     commission = str(sum([float(fill["commission"]) for fill in transaction["fills"]]))
-    if not os.path.exists(file_path + "/transactions" + str(client_id) + ".csv"):
-        df = pd.DataFrame(
-            columns=[
-                "Symbol",
-                "OrderId",
-                "ClientId",
-                "ClientOrderId",
-                "Status",
-                "Type",
-                "Side",
-                "Price",
-                "Gain",
-                "Quantity",
-                "Commission",
-                "tradeId",
-                "transactDate",
-                "transactTime",
-                "Timestamp",
-            ]
-        )
 
-        df.to_csv(
-            file_path + "/transactions" + str(client_id) + ".csv", sep=";", index=False
-        )
     file_path = os.path.join(
         current_directory,
         "..",
@@ -253,7 +241,23 @@ def remove_symbol_to_wallet(symbol, user_ID):
 
     df.to_csv("./wallets/wallet" + str(user_ID) + ".csv", sep=";", index=False)
 
+def add_new_quantity_usdt(user_ID, quantity_USDT):
+    current_directory = os.path.dirname(__file__)
+    file_path = os.path.join(
+        current_directory,
+        "..",
+        "data",
+        "./wallets/wallet" + str(user_ID) + ".csv",
+    )
 
+    df = pd.read_csv(file_path, sep=";")
+
+    for crypto in CRYPTO_ARRAY:
+        df.loc[df["Symbol"] == crypto, "Quantity_USDT"] = round(
+            df.loc[df["Symbol"] == crypto, "Quantity_USDT"].values[0] + (quantity_USDT / NB_CRYPTO) , 2
+        )
+
+    df.to_csv(file_path, sep=";", index=False)
 def init_solde(user):
     current_directory = os.path.dirname(__file__)
     file_path = os.path.join(current_directory, "soldes")
@@ -279,7 +283,6 @@ def update_solde(id_user, gain):
     df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
 
     df.to_csv(file_path + "/solde" + str(id_user) + ".csv", sep=";", index=False)
-
 
 if __name__ == "__main__":
     # fill_first_time_wallet(CRYPTO_ARRAY, 1)
