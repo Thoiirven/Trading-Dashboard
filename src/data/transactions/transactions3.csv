@@ -1,1 +1,2 @@
 Symbol;OrderId;ClientId;ClientOrderId;Status;Type;Side;Price;Gain;Quantity;Commission;tradeId;transactDate;transactTime;Timestamp
+OMGUSDT;2018125080;3;acPBSMD8C1H3vqKoJaeDMj;FILLED;MARKET;BUY;1.17600000;0;14.1;0.0141;121032742;2024-03-08;00:00:22;1709852422443
