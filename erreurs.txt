@@ -132,3 +132,4 @@ Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connectio
 Erreur détectée : ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 Erreur détectée : Timed out
 Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=EGLDUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ffeb620f1d0>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=ONEUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ffeb60be5d0>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
