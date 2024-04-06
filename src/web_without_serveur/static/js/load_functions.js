@@ -277,7 +277,7 @@ function updateTransaction(data) {
 
         var h5 = document.createElement("h5");
         h5.classList.add("font-weight-bold");
-        h5.textContent = `Profit : ${profit.toFixed(2)} $ Stop loss : ${sl.toFixed(2)} $'`;
+        h5.textContent = `Profit : ${profit.toFixed(2)} $ Stop loss : ${sl.toFixed(2)} $`;
 
         var progressDiv = document.createElement("div");
         progressDiv.classList.add("progress", "mb-4");
