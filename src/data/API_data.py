@@ -24,6 +24,7 @@ def fill_first_time_wallet(crypto_array, user_ID, value_begin_usdt):
                 "Current_Price",
                 "Price_Buy",
                 "Quantity_USDT",
+                "Stop_Loss",
             ]
         )
         df.to_csv(file_path + "/wallet" + str(user_ID) + ".csv", sep=";", index=False)
@@ -34,6 +35,7 @@ def fill_first_time_wallet(crypto_array, user_ID, value_begin_usdt):
             "Quantity": value_begin_usdt,
             "Price_Buy": 0,
             "Quantity_USDT": value_begin_usdt,
+            "Stop_Loss":0,
         }
         df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
         print(df)
@@ -44,6 +46,7 @@ def fill_first_time_wallet(crypto_array, user_ID, value_begin_usdt):
                 "Quantity": 0,
                 "Price_Buy": 0,
                 "Quantity_USDT": int(value_begin_usdt) / NB_CRYPTO,
+                "Stop_Loss":0,
             }
             df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
 
@@ -81,6 +84,16 @@ def update_quantity_wallet(symbol, user_ID, quantity):
 
     df.to_csv(file_path, sep=";", index=False)
 
+def set_stop_loss_wallet(symbol, user_ID, Stop_Loss):
+    current_directory = os.path.dirname(__file__)
+    file_path = os.path.join(
+        current_directory, "..", "data", "./wallets/wallet" + str(user_ID) + ".csv"
+    )
+    df = pd.read_csv(file_path, sep=";")
+    df.loc[df["Symbol"] == symbol, "Stop_Loss"] = Stop_Loss
+
+    df.to_csv(file_path, sep=";", index=False)
+
 def set_quantity_wallet(symbol, user_ID, quantity):
     current_directory = os.path.dirname(__file__)
     file_path = os.path.join(
@@ -101,9 +114,6 @@ def update_price_wallet(symbol, user_ID, price):
     df.loc[df["Symbol"] == symbol, "Price_Buy"] = price
 
     df.to_csv(file_path, sep=";", index=False)
-
-
-
 
 def add_quantity_usdt_wallet(symbol, user_ID, quantity):
     current_directory = os.path.dirname(__file__)
