@@ -209,7 +209,7 @@ function process_wallet_CSV(csvData) {
                 symbol_pie.push(rowData[0])
                 value_pie.push(rowData[2] * rowData[3]) 
                 crypt_dict.push({name: rowData[0], quantity: rowData[2]})
-                crypt_to_bar_progress.push({name: rowData[0], quantity: rowData[2], current_price : rowData[3], price_buy : rowData[4]})                
+                crypt_to_bar_progress.push({name: rowData[0], quantity: rowData[2], current_price : rowData[3], price_buy : rowData[4], stop_loss : rowData[5]})                
             }
         }
         if(rowData[0] != "USDT") {
@@ -253,6 +253,7 @@ function updateTransaction(data) {
 
     data.forEach(item => {
         const profit = (item.quantity * item.current_price) - (item.price_buy * item.quantity) 
+        const sl = -(item.price_buy - item.stop_loss ) * item.quantity
 
         var mother_div = document.createElement("div");
         mother_div.classList.add("col-md-4");
@@ -276,7 +277,7 @@ function updateTransaction(data) {
 
         var h5 = document.createElement("h5");
         h5.classList.add("font-weight-bold");
-        h5.textContent = `Profit :  ${profit.toFixed(2) + ' $'}`;
+        h5.textContent = `Profit : ${profit.toFixed(2)} $ Stop loss : ${sl.toFixed(2)} $'`;
 
         var progressDiv = document.createElement("div");
         progressDiv.classList.add("progress", "mb-4");
