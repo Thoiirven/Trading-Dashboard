@@ -209,7 +209,7 @@ function process_wallet_CSV(csvData) {
                 symbol_pie.push(rowData[0])
                 value_pie.push(rowData[2] * rowData[3]) 
                 crypt_dict.push({name: rowData[0], quantity: rowData[2]})
-                crypt_to_bar_progress.push({name: rowData[0], quantity: rowData[2], current_price : rowData[3], price_buy : rowData[4], stop_loss : rowData[5]})                
+                crypt_to_bar_progress.push({name: rowData[0], quantity: rowData[2], current_price : rowData[3], price_buy : rowData[4], stop_loss : rowData[6]})                
             }
         }
         if(rowData[0] != "USDT") {
