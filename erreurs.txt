@@ -177,3 +177,4 @@ Erreur détectée : Timed out
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/24hr?symbol=ETHUSDT (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Erreur détectée : ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
