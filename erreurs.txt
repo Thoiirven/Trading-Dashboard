@@ -189,3 +189,4 @@ Erreur détectée : Timed out
 Erreur détectée : Timed out
 Erreur détectée : Timed out
 Erreur détectée : Timed out
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/24hr?symbol=AVAXUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff117ee410>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
