@@ -200,3 +200,11 @@ Erreur détectée : Timed out
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=OMGUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff11cdef10>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
 Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=BTCUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff1194e690>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=BTCUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff119e7150>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/24hr?symbol=EGLDUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff11976190>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/24hr?symbol=HOTUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff11b7fa90>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
+Erreur détectée : Timed out
+Erreur détectée : Timed out
+Erreur détectée : ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Erreur détectée : Timed out
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=OMGUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff119770d0>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
