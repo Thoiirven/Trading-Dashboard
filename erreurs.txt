@@ -238,3 +238,5 @@ Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max r
 Erreur détectée : Timed out
 Erreur détectée : Timed out
 Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=INJUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff11def4d0>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=INJUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff11e2d2d0>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/24hr?symbol=EGLDUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff11e342d0>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
