@@ -254,3 +254,4 @@ Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and
 Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
 Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
 Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
+Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
