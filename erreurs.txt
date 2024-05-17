@@ -263,3 +263,8 @@ Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max r
 Erreur détectée : ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 Erreur détectée : Timed out
+Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
+Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
+Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
+Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
+Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
