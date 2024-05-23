@@ -294,3 +294,4 @@ Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and
 Erreur détectée : unsupported operand type(s) for +: 'BinanceAPIException' and 'str'
 Erreur détectée : Message is too long
 APIError(code=-1013): Invalid quantity.
+APIError(code=-1013): Invalid quantity.
