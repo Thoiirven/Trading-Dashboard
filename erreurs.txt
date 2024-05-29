@@ -302,3 +302,13 @@ Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max r
 Erreur détectée : Timed out
 Erreur détectée : Timed out
 Erreur détectée : Timed out
+Erreur détectée : 'side'
+Erreur détectée : 'side'
+Erreur détectée : 'side'
+Erreur détectée : 'side'
+Erreur détectée : 'side'
+Erreur détectée : 'side'
+Erreur détectée : 'side'
+Erreur détectée : 'side'
+Erreur détectée : 'side'
+Erreur détectée : 'side'
