@@ -313,3 +313,4 @@ Erreur détectée : 'side'
 Erreur détectée : 'side'
 Erreur détectée : 'side'
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
