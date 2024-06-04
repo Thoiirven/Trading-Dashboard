@@ -5,7 +5,6 @@ import sys
 sys.path.insert(0, "..")
 from config import CRYPTO_ARRAY
 from config import DICT_NAME
-from config import NB_CRYPTO
 from utils.get_data import *
 
 from datetime import date
@@ -45,7 +44,7 @@ def fill_first_time_wallet(crypto_array, user_ID, value_begin_usdt):
                 "Symbol": crypto,
                 "Quantity": 0,
                 "Price_Buy": 0,
-                "Quantity_USDT": int(value_begin_usdt) / NB_CRYPTO,
+                "Quantity_USDT": int(value_begin_usdt) / len(CRYPTO_ARRAY),
                 "Stop_Loss":0,
             }
             df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
@@ -264,7 +263,7 @@ def add_new_quantity_usdt(user_ID, quantity_USDT):
 
     for crypto in CRYPTO_ARRAY:
         df.loc[df["Symbol"] == crypto, "Quantity_USDT"] = round(
-            df.loc[df["Symbol"] == crypto, "Quantity_USDT"].values[0] + (quantity_USDT / NB_CRYPTO) , 2
+            df.loc[df["Symbol"] == crypto, "Quantity_USDT"].values[0] + (quantity_USDT / len(CRYPTO_ARRAY)) , 2
         )
 
     df.to_csv(file_path, sep=";", index=False)
