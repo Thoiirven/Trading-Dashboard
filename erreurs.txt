@@ -338,3 +338,4 @@ Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connectio
 Erreur détectée : Timed out
 Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=HOTUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff1ea4c210>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
+Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/price?symbol=OMGUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fff1e676990>: Failed to resolve 'api.binance.com' ([Errno -3] Temporary failure in name resolution)"))
