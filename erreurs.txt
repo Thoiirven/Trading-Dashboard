@@ -347,3 +347,5 @@ Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max r
 Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/24hr?symbol=HOTUSDT (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ffeb3df6250>, 'Connection to api.binance.com timed out. (connect timeout=None)'))
 Erreur détectée : HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ticker/24hr?symbol=ETHUSDT (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7ffeb3df40d0>, 'Connection to api.binance.com timed out. (connect timeout=None)'))
 APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
