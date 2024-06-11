@@ -397,3 +397,5 @@ APIError(code=-2015): Invalid API-key, IP, or permissions for action.
 APIError(code=-2015): Invalid API-key, IP, or permissions for action.
 APIError(code=-2015): Invalid API-key, IP, or permissions for action.
 APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
