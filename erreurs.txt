@@ -934,3 +934,10 @@ APIError(code=-2015): Invalid API-key, IP, or permissions for action.
 APIError(code=-2015): Invalid API-key, IP, or permissions for action.
 APIError(code=-2015): Invalid API-key, IP, or permissions for action.
 APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+Erreur détectée : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+APIError(code=-2015): Invalid API-key, IP, or permissions for action.
